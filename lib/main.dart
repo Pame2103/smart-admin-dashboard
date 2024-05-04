@@ -15,7 +15,7 @@ Widget build(BuildContext context) {
       child: FutureBuilder(
         builder: (context, snapshot) {
           return MyApp();
-        },
+        }, future: null,
       ));
 }
 
@@ -31,7 +31,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: bgColor,
         primaryColor: greenColor,
         dialogBackgroundColor: secondaryColor,
-        buttonColor: greenColor,
+        //buttonColor: greenColor,
         textTheme: GoogleFonts.openSansTextTheme(Theme.of(context).textTheme)
             .apply(bodyColor: Colors.white),
         canvasColor: secondaryColor,
@@ -40,3 +40,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+  
